@@ -61,9 +61,9 @@ export default function App() {
     } catch (err) {
       console.error('API Error:', err);
       setError(
-        err.response?.data?.detail ||
-        'Failed to connect to PriceBite backend (localhost:8000). Make sure FastAPI is running.'
-      );
+  err.response?.data?.detail ||
+  'Failed to connect to PriceBite backend. Please try again.'
+);
     } finally {
       setLoading(false);
     }
